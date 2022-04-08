@@ -6,6 +6,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--  META TAGS -->
 
@@ -50,11 +51,24 @@
   <body>
     <header class="header header_secondary">
       <div class="header__inner">
-        <a href="" class="header__logo-link">
+        <a href="index.html" class="header__logo-link">
           <img src="images/logo.svg" alt="logo" class="header__logo"
         /></a>
+        <svg
+          class="header__hamburger"
+          width="448"
+          height="392"
+          viewBox="0 0 448 392"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 72H432C440.837 72 448 64.837 448 56V16C448 7.163 440.837 0 432 0H16C7.163 0 0 7.163 0 16V56C0 64.837 7.163 72 16 72ZM16 232H432C440.837 232 448 224.837 448 216V176C448 167.163 440.837 160 432 160H16C7.163 160 0 167.163 0 176V216C0 224.837 7.163 232 16 232ZM16 392H432C440.837 392 448 384.837 448 376V336C448 327.163 440.837 320 432 320H16C7.163 320 0 327.163 0 336V376C0 384.837 7.163 392 16 392Z"
+            fill="black"
+          />
+        </svg>
         <nav class="header__nav">
-          <a href="course.html" class="header__nav-link button_nav">Courses</a>
+          <a href="courses.html" class="header__nav-link button_nav">Courses</a>
           <a href="#" class="header__nav-button button button_nav">Sign in</a>
           <a
             href="#"
@@ -66,84 +80,63 @@
     </header>
 
     <main>
-      <section>
-        <div class="courses">
-          <div class="courses__inner">
-            <div class="courses__inner-header">
-              <h1 class="courses__inner-header-heading">All courses</h1>
-            </div>
-            <div class="courses__inner-header">
-              <h1 class="courses__inner-header-heading">
-                Single course template
-              </h1>
-            </div>
-
-            <div class="courses__inner-cards">
-              <div class="courses__inner-cards-card">
-                <div class="card__image">
-                  <img src="images/lecture-1.jpg" alt="lecture-1.jpg" />
-                </div>
-                <div class="card_title">
-                  <h3>1. Introduction</h3>
-                </div>
-                <div class="card_subtitle">
-                  <h5>60 Minutes</h5>
-                </div>
-              </div>
-
-              <div class="courses__inner-cards-card">
-                <div class="card__image">
-                  <img src="images/lecture-2.jpg" alt="lecture-1.jpg" />
-                </div>
-                <div class="card_title">
-                  <h3>2. HTML&CSS</h3>
-                </div>
-                <div class="card_subtitle">
-                  <h5>120+ Minutes</h5>
-                </div>
-              </div>
-
-              <div class="courses__inner-cards-card">
-                <div class="card__image">
-                  <img src="images/lecture-3.jpg" alt="lecture-1.jpg" />
-                </div>
-                <div class="card_title">
-                  <h3>3. Version Control System</h3>
-                </div>
-                <div class="card_subtitle">
-                  <h5>120+ Minutes</h5>
-                </div>
-              </div>
-
-              <div class="courses__inner-cards-card">
-                <div class="card__image">
-                  <img src="images/lecture-4.jpg" alt="lecture-1.jpg" />
-                </div>
-                <div class="card_title">
-                  <h3>4. Advanced CSS</h3>
-                </div>
-                <div class="card_subtitle">
-                  <h5>120+ Minutes</h5>
-                </div>
-              </div>
-            </div>
+      <section class="section">
+        <div class="section__inner">
+          <span class="section__action-text">120+ Minutes</span>
+          <div class="section__heading">
+            <h1 class="section__title">1. Introduction</h1>
+            <a
+              href="javascript:history.back()"
+              class="button button_heading button_outline"
+              >Back</a
+            >
           </div>
-        </div>
 
-        <div class="testimonials">
-          <div class="testimonials__inner">
-            <div class="testimonials__inner-image">
-              <img src="images/testimonial.jpg" alt="testimonial.jpg" />
-            </div>
-
-            <div class="testimonials__inner-text">
-              <blockqute class="blockquote">
-                <span class="quotes">"</span>At the academy, I learned how to
-                apply technology in practice. Frontend education was demanding,
-                it required a lot of time. Upon completion, I got my first job
-                as a developer.<span class="quotes">"</span>
-              </blockqute>
-            </div>
+          <div class="single-course">
+            <figure class="single-course__figure">
+              <img
+                class="single-course__image"
+                src="images/lecture-1.jpg"
+                alt="lecture-1.jpg"
+              />
+            </figure>
+            <p class="single-course__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              condimentum bibendum velit, nec ultricies ante aliquam nec.
+              Pellentesque elit massa, rutrum ac dapibus non, pharetra eget
+              dolor. Aliquam erat volutpat. Fusce interdum nibh mi, vel accumsan
+              lectus commodo quis. Etiam sagittis vel metus a vehicula. Nunc
+              tincidunt sodales dui non pulvinar. In hac habitasse platea
+              dictumst. Pellentesque imperdiet nisl quis consequat gravida.
+              Morbi facilisis eleifend consectetur. Praesent at enim sed velit
+              commodo euismod fermentum pulvinar felis. Nullam sit amet
+              fringilla dolor, non fringilla lacus. Mauris rhoncus a eros non
+              iaculis. Phasellus interdum ultrices nisi id efficitur. Nullam
+              malesuada commodo dolor. Suspendisse et vulputate libero.<br /><br />
+              Phasellus tincidunt metus id nunc condimentum, et elementum enim
+              accumsan. Praesent condimentum urna sapien, ultrices sagittis
+              neque efficitur non. Quisque sagittis convallis lectus, id
+              lobortis massa. Morbi ac posuere velit. Mauris rhoncus, sem nec
+              interdum vehicula, arcu nibh ultrices risus, sed pellentesque enim
+              libero eget nisi. Sed sed pulvinar risus. Nulla facilisi. Integer
+              vel tempor felis, non viverra arcu. Pellentesque sed fringilla
+              justo, a volutpat nisl. Nulla facilisi. Ut et hendrerit eros, eget
+              dapibus leo. Curabitur at condimentum libero, vehicula porta
+              mauris. Quisque volutpat ut nisi ut porta.<br /><br />
+              Proin vestibulum auctor justo vel blandit. Curabitur sit amet
+              purus nec dolor lacinia placerat ut id est. Morbi eget auctor
+              diam. Pellentesque viverra mi eget tellus sollicitudin elementum.
+              Vestibulum molestie purus sit amet nisl volutpat vulputate. Nullam
+              tempor sit amet nibh eu accumsan. Morbi a vulputate massa, a
+              tristique eros. Sed et nisl vitae metus lacinia luctus.
+              Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas. Duis semper dui sed nulla
+              luctus cursus. Donec ac bibendum urna. Cras vitae dolor in dui
+              efficitur elementum. Curabitur varius orci ac nibh molestie,
+              bibendum bibendum velit accumsan. Proin dolor ex, sagittis sodales
+              erat id, posuere cursus nibh. Donec at blandit libero. Aenean non
+              dui vitae enim tincidunt imperdiet in eu dolor.
+            </p>
           </div>
         </div>
       </section>

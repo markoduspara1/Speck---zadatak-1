@@ -6,6 +6,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--  META TAGS -->
 
@@ -50,7 +51,7 @@
   <body>
     <header class="header header_secondary">
       <div class="header__inner">
-        <a href="" class="header__logo-link">
+        <a href="index.html" class="header__logo-link">
           <img src="images/logo.svg" alt="logo" class="header__logo"
         /></a>
         <nav class="header__nav">
@@ -66,79 +67,81 @@
     </header>
 
     <main>
-      <section>
-        <div class="courses">
-          <div class="courses__inner">
-            <div class="courses__inner-header">
-              <h1 class="courses__inner-header-heading">All courses</h1>
-            </div>
+      <!-- Section -->
 
-            <div class="courses__inner-cards">
-              <div class="courses__inner-cards-card">
-                <div class="card__image">
-                  <img src="images/lecture-1.jpg" alt="lecture-1.jpg" />
-                </div>
-                <div class="card_title">
-                  <h3>1. Introduction</h3>
-                </div>
-                <div class="card_subtitle">
-                  <h5>60 Minutes</h5>
-                </div>
-              </div>
-
-              <div class="courses__inner-cards-card">
-                <div class="card__image">
-                  <img src="images/lecture-2.jpg" alt="lecture-1.jpg" />
-                </div>
-                <div class="card_title">
-                  <h3>2. HTML&CSS</h3>
-                </div>
-                <div class="card_subtitle">
-                  <h5>120+ Minutes</h5>
-                </div>
-              </div>
-
-              <div class="courses__inner-cards-card">
-                <div class="card__image">
-                  <img src="images/lecture-3.jpg" alt="lecture-1.jpg" />
-                </div>
-                <div class="card_title">
-                  <h3>3. Version Control System</h3>
-                </div>
-                <div class="card_subtitle">
-                  <h5>120+ Minutes</h5>
-                </div>
-              </div>
-
-              <div class="courses__inner-cards-card">
-                <div class="card__image">
-                  <img src="images/lecture-4.jpg" alt="lecture-1.jpg" />
-                </div>
-                <div class="card_title">
-                  <h3>4. Advanced CSS</h3>
-                </div>
-                <div class="card_subtitle">
-                  <h5>120+ Minutes</h5>
-                </div>
-              </div>
-            </div>
+      <section class="section">
+        <div class="section__inner">
+          <div class="section__heading">
+            <h1 class="section__title">All lectures</h1>
           </div>
-        </div>
 
-        <div class="testimonials">
-          <div class="testimonials__inner">
-            <div class="testimonials__inner-image">
-              <img src="images/testimonial.jpg" alt="testimonial.jpg" />
-            </div>
-
-            <div class="testimonials__inner-text">
-              <blockqute class="blockquote">
-                <span class="quotes">"</span>At the academy, I learned how to
-                apply technology in practice. Frontend education was demanding,
-                it required a lot of time. Upon completion, I got my first job
-                as a developer.<span class="quotes">"</span>
-              </blockqute>
-            </div>
+          <div class="courses-featured">
+            <a href="course.html" class="course">
+              <figure class="course__figure">
+                <img
+                  src="images/lecture-1.jpg"
+                  alt="Introduction"
+                  class="course__img"
+                />
+              </figure>
+              <h3 class="course__title">1. Introduction</h3>
+              <p class="course__subtitle">60 Minutes</p>
+            </a>
+            <a href="course.html" class="course">
+              <figure class="course__figure">
+                <img
+                  src="images/lecture-2.jpg"
+                  alt="HTML & CSS"
+                  class="course__img"
+                />
+              </figure>
+              <h3 class="course__title">2. HTML & CSS</h3>
+              <p class="course__subtitle">120+ Minutes</p>
+            </a>
+            <a href="course.html" class="course">
+              <figure class="course__figure">
+                <img
+                  src="images/lecture-3.jpg"
+                  alt="Version Control Systems"
+                  class="course__img"
+                />
+              </figure>
+              <h3 class="course__title">3. Version Control Systems</h3>
+              <p class="course__subtitle">120+ Minutes</p>
+            </a>
+            <a href="course.html" class="course">
+              <figure class="course__figure">
+                <img
+                  src="images/lecture-4.jpg"
+                  alt="Advanced CSS"
+                  class="course__img"
+                />
+              </figure>
+              <h3 class="course__title">4. Advanced CSS</h3>
+              <p class="course__subtitle">120+ Minutes</p>
+            </a>
+            <a href="course.html" class="course">
+              <figure class="course__figure">
+                <img
+                  src="images/lecture-5.jpg"
+                  alt="Version Control Systems"
+                  class="course__img"
+                />
+              </figure>
+              <h3 class="course__title">5. Version Control Systems</h3>
+              <p class="course__subtitle">120+ Minutes</p>
+            </a>
+            <a href="course.html" class="course">
+              <figure class="course__figure">
+                <img
+                  src="images/lecture-6.jpg"
+                  alt="Version Control Systems"
+                  class="course__img"
+                />
+              </figure>
+              <h3 class="course__title">6. Version Control Systems</h3>
+              <p class="course__subtitle">120+ Minutes</p>
+            </a>
           </div>
         </div>
       </section>
